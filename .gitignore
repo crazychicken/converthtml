@@ -1,0 +1,8 @@
+node_modules
+sitemap
+theme/*
+public/*.html
+public/**/*.js
+*.png
+*.xml
+*.txt

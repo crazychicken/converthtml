@@ -1,13 +1,9 @@
 node_modules
-sass/style.scss
-theme/*
-images
-*.css
 *.html
 *.js
-!/public/theme/css/convert-all-theme.css
-!/public/theme/css/convert-theme-default.css
-!/public/theme/css/convert-theme-dark.css
+*.png
+*.xml
+*.txt
 **.DS_Store
 .DS_Store?
 

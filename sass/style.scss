@@ -1,0 +1,167 @@
+// ##############################
+// Author  : Crazychicken - Tuds
+// Name    : Convert Languages
+// Version : 0.0.1
+// Github  :
+// ##############################
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+h1 {
+  font-size: 56px;
+  font-weight: 300;
+  color: #20c997;
+  text-align: center;
+}
+p {
+  color: #adb5bd;
+  margin-bottom: 0;
+}
+.container {
+  width: 720px;
+  margin: 0 auto;
+  margin-top: 30px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+#inputText,
+#outputText {
+  float: left;
+  width: 49%;
+  margin: 10px 2% 15px 0;
+  border: 2px solid #ddd;
+  resize: none;
+  box-sizing: border-box;
+  outline: none;
+}
+#outputText {
+  margin-right: 0;
+}
+#showText {
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+  overflow-x: scroll;
+  border-top: 2px dashed #ddd;
+}
+#subMit,
+#language,
+#colors,
+#labels {
+  width: 23.5%;
+  height: 39px;
+  display: inline-block;
+  border: 1px solid #ddd;
+  padding: 10px 25px;
+  border-radius: 6px;
+  float: left;
+  background: #fff;
+  margin-right: 2%;
+  outline: none;
+}
+#subMit {
+  border: none;
+  color: #fff;
+  background: #20c997;
+  margin-right: 0;
+  cursor: pointer;
+}
+.amp_pre {
+  margin: 20px 0;
+}
+.amp_tag_abbr {
+  animation-name: tag_abbr;
+  animation-duration: 0.5s;
+}
+
+.nav {
+  margin: 30px auto 0 auto;
+  width: 320px;
+  text-align: center;
+  a {
+    margin: 0 15px;
+    color: #4b4b4b;
+    text-decoration: none;
+    position: relative;
+    &.active::after {
+      content: '';
+      position: absolute;
+      height: 4px;
+      border-radius: 4px;
+      background-color: #e83e8c;
+      width: 120%;
+      bottom: -10px;
+      left: -10%;
+      right: 0;
+      margin: 0 auto;
+    }
+  }
+}
+
+.blog {
+  color: #4b4b4b;
+  margin: 30px 0;
+  width: 100%;
+  display: inline-block;
+  &-title {
+    font-weight: 500;
+  }
+}
+
+.green {
+  color: #20c997;
+}
+
+.footer {
+  width: 100%;
+  display: inline-block;
+  padding: 15px 0;
+  font-size: 13px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 36px;
+  }
+  .container {
+    padding: 0 15px;
+    width: 100%;
+  }
+  #inputText,
+  #outputText {
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+  #subMit,
+  #language,
+  #colors,
+  #labels {
+    width: 48%;
+    margin-right: 4%;
+    margin-bottom: 10px;
+  }
+  #labels,
+  #subMit {
+    margin-right: 0;
+  }
+}
+
+
+// @import 'convert-theme-dark.scss';
+// @import 'convert-theme-default.scss';
+@import 'convert-all-theme.scss';
+
+@keyframes tag_abbr {
+  from {color: $bg_pre;}
+  to {color: red;}
+}
+
+
+
+
+

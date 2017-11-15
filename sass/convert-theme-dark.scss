@@ -1,0 +1,108 @@
+// ##############################
+// Author  : Crazychicken - Tuds
+// Name    : Convert Languages
+// Version : 0.0.1
+// Github  :
+// ##############################
+// ### variable default colors ###
+$bg_pre    : #4b4b4b;
+// $abbr      : darken($bg_pre, 10%);
+
+$blue-light: #4f9fcf;
+// $attibute  : $blue-light;
+// $selector  : $blue-light;
+// $function  : $blue-light;
+
+$tag       : #a0c3dc;
+
+$property  : #b8c0c5;
+$value     : #e83e8c;
+
+$variable  : #ffaa63;
+$quote     : #20c997;
+$comment   : #7b7b7b;
+
+// ### GLOBAL ###
+.amp_fn { // funciton @
+  font-weight: bold;
+}
+.amp_cm {
+  .amp_fn {
+    font-weight: normal;
+  }
+}
+// ### END GLOBAL ###
+
+
+.amp_pre_dark {
+  font-size: 0.9rem;
+  line-height: 1.4em;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  padding: 15px;
+  background: $bg_pre;
+  color: lighten($tag, 10%);
+}
+.amp_tag_abbr {
+  top: 5px;
+  right: 10px;
+  padding: 5px;
+  position: absolute;
+  font-size: 12px;
+  color: lighten($bg_pre, 10%);
+  background: $bg_pre;
+}
+// ##### DEFAULT #####
+.amp_pre_wrap {
+  margin: 0;
+  overflow-x: scroll;
+  padding-right: 40px;
+}
+.amp_tag { // tab html
+  color: $tag;
+}
+.amp_pr { // property:
+  &,
+  .amp_tag {
+    color: $property;
+  }
+}
+.amp_vl { // value
+  &,
+  .amp_tag {
+    color: $value;
+  }
+}
+.amp_attr, // attibute
+.amp_fn,   // funciton @
+.amp_sl {  // selector :hover, :focus ..
+  color: $blue-light;
+}
+.amp_var { // variable
+  color: $variable;
+}
+.amp_q { // comment + quote
+  &,
+  .amp_var,
+  .amp_attr,
+  .amp_cn,
+  .amp_tag,
+  .amp_q,
+  .amp_fn {
+    color: $quote;
+  }
+}
+.amp_cm { // comment
+  &,
+  .amp_var,
+  .amp_attr,
+  .amp_cn,
+  .amp_tag,
+  .amp_q,
+  .amp_fn {
+    color: $comment;
+  }
+}
+
+// ##### END DARK #####

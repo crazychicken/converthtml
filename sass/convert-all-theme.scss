@@ -1,0 +1,184 @@
+// ##############################
+// Author  : Crazychicken - Tuds
+// Name    : Convert Languages
+// Version : 0.0.1
+// Github  :
+// ##############################
+// ### variable default colors ###
+$bg_pre    : #f7f7f9;
+// $abbr      : darken($bg_pre, 10%);
+
+$blue-light: #4f9fcf;
+// $attibute  : $blue-light;
+// $selector  : $blue-light;
+// $function  : $blue-light;
+
+$color_df  : #86acc7;
+$tag       : #65849a;
+
+$property  : #afafaf;
+$value     : #e83e8c;
+
+$variable  : #fd7e14;
+$quote     : #20c997;
+$comment   : #ddd;
+
+
+// ### GLOBAL ###
+.amp_pre {
+  font-size: 0.9rem;
+  line-height: 1.4em;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  padding: 15px;
+}
+.amp_pre_wrap {
+  margin: 0;
+  overflow-x: scroll;
+  padding-right: 40px;
+}
+.amp_tag_abbr {
+  top: 5px;
+  right: 10px;
+  padding: 5px;
+  position: absolute;
+  font-size: 0.85em;
+}
+.amp_fn { // funciton @
+  font-weight: bold;
+}
+.amp_cm {
+  .amp_fn {
+    font-weight: normal;
+  }
+}
+// ### END GLOBAL ###
+
+// ##### DEFAULT #####
+.amp_pre_default {
+  background: $bg_pre;
+  color: lighten($tag, 10%);
+  .amp_tag_abbr {
+    color: darken($bg_pre, 10%);
+    background: $bg_pre;
+  }
+  .amp_tag { // tab html
+    color: $tag;
+  }
+  .amp_pr { // property:
+    &,
+    .amp_tag {
+      color: $property;
+    }
+  }
+  .amp_vl { // value
+    &,
+    .amp_tag {
+      color: $value;
+    }
+  }
+  .amp_attr, // attibute
+  .amp_fn,   // funciton @
+  .amp_sl {  // selector :hover, :focus ..
+    color: $blue-light;
+  }
+  .amp_var { // variable
+    color: $variable;
+  }
+
+  .amp_q { // comment + quote
+    &,
+    .amp_var,
+    .amp_attr,
+    .amp_cn,
+    .amp_tag,
+    .amp_q,
+    .amp_fn {
+      color: $quote;
+    }
+  }
+  .amp_cm { // comment
+    &,
+    .amp_var,
+    .amp_attr,
+    .amp_cn,
+    .amp_tag,
+    .amp_q,
+    .amp_fn {
+      color: $comment;
+    }
+  }
+}
+// ##### END DEFAULT #####
+
+
+// ### DARK ###
+.amp_pre_dark {
+  // change
+  $bg_pre    : #4b4b4b;
+  $blue-light: #4f9fcf;
+  $tag       : #a0c3dc;
+  $property  : #b8c0c5;
+  $value     : #e83e8c;
+  $variable  : #ffaa63;
+  $quote     : #20c997;
+  $comment   : #7b7b7b;
+  &.amp_pre {
+    background: $bg_pre;
+    color: lighten($tag, 10%);
+  }
+  .amp_tag_abbr {
+    color: lighten($bg_pre, 10%);
+    background: $bg_pre;
+  }
+  // ##### DEFAULT #####
+  .amp_tag { // tab html
+    color: $tag;
+  }
+  .amp_pr { // property:
+    &,
+    .amp_tag {
+      color: $property;
+    }
+  }
+  .amp_vl { // value
+    &,
+    .amp_tag {
+      color: $value;
+    }
+  }
+  .amp_attr, // attibute
+  .amp_fn,   // funciton @
+  .amp_sl {  // selector :hover, :focus ..
+    color: $blue-light;
+  }
+  .amp_var { // variable
+    color: $variable;
+  }
+  .amp_q { // comment + quote
+    &,
+    .amp_var,
+    .amp_attr,
+    .amp_cn,
+    .amp_tag,
+    .amp_q,
+    .amp_fn {
+      color: $quote;
+    }
+  }
+  .amp_cm { // comment
+    &,
+    .amp_var,
+    .amp_attr,
+    .amp_cn,
+    .amp_tag,
+    .amp_q,
+    .amp_fn {
+      color: $comment;
+    }
+  }
+}
+// ##### END DARK #####
+
+// ##### END DEFAULT #####

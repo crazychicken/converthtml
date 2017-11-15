@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>ConvertHtml | Index | Tuds</title>
+		@@include('./html-global/head.html')
+    <!-- Only home -->
+    <meta name='revisit-after' content='1 days'/>
+    <meta name="description" content="Converthtml help you convert your original html into a colorful one, which is useful for html-style tutorial/demo pages. Converthtml is designed with many colorful themes for you to choose.">
+    <link rel="canonical" href="https://converthtml.amptype.com/"/>
+    <link rel="alternate" href="https://converthtml.amptype.com/" hreflang="en"/>
+    <link rel="stylesheet" href="theme/css/style.css">
+    <!-- ./End only home -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-46711522-6', 'auto');
+      ga('send', 'pageview');
+    </script>
+	</head>
+  <!-- master tool -->
+    <script type="application/ld+json">
+      {
+        "@context" : "https://schema.org",
+        "@type": "WebSite",
+        "url" : "converthtml.amptype.com",
+        "name": "converthtml",
+        "alternateName": "converthtml",
+        "author": {
+            "@type": "Person",
+            "name": "Tu Truong",
+            "url": "https://twitter.com/mtu_truong"
+        },
+        "description":"Converthtml help you convert your original html into a colorful one, which is useful for html-style tutorial/demo pages. Converthtml is designed with many colorful themes for you to choose.",
+        "image": {
+            "@type": "ImageObject",
+            "width": 256,
+            "height": 256,
+            "url": "https://converthtml.amptype.com/theme/images/about-convert.png"
+        },
+        "creator": ["Tu Truong"],
+        "sameAs": ["https://www.facebook.com/tudscss",
+        "https://plus.google.com/u/0/111272361722398364018",
+        "https://twitter.com/mtu_truong",
+        "https://www.youtube.com/channel/UCDACe-7BFGDucQoxTDfPotw"],
+        "keywords": ["converthtml", "convert content", "convert sass", "tuds", "crazychicken", "convert css", "amptype", "t-scroll"]
+      }
+    </script>
+    <!-- /master tool -->
+	<body>
+    <header>
+      <nav class="nav">
+        <a class="active" href="./index.html">Convert</a>
+        <a href="./documents.html">Docs</a>
+        <a href="./demos.html">Demos</a>
+        <a href="#">Github</a>
+      </nav>
+    </header>
+		<main class="container">
+			<h1>CONVERT HTML THEMES</h1>
+			<p>Give me content</p>
+			<textarea name="" id="inputText" cols="100" rows="10">
+Give me content ...!
+			</textarea>
+		  <textarea name="" id="outputText" cols="100" rows="10"></textarea>
+			<div class="clear">
+				<select id="language">
+          <option value="HTML">HTML</option>
+          <option value="CSS">CSS</option>
+          <option value="SCSS">SCSS</option>
+				</select>
+        <select id="labels">
+          <option value="ON">LABEL ON</option>
+          <option value="OFF">LABEL OFF</option>
+        </select>
+        <select id="colors">
+          <option value="amp_pre amp_pre_default">DEFAULT THEME</option>
+          <option value="amp_pre amp_pre_dark">DARK</option>
+        </select>
+        <button id="subMit">
+          SUBMIT
+        </button>
+			</div>
+			
+			<div id="showText"></div>
+		</main>
+    @@include('./html-global/footer.html')
+		<script type="text/javascript" src="theme/js/custom.js"></script>
+	</body>
+</html>
