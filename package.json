@@ -1,6 +1,6 @@
 {
   "name": "converthtml",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Converthtml help you convert your original html into a colorful one, which is useful for html-style tutorial/demo pages. Converthtml is designed with many colorful themes for you to choose.",
   "main": "gulpfile.js",
   "repository": {

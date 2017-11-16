@@ -1,7 +1,7 @@
 // ##############################
 // Author  : Crazychicken - Tuds
 // Name    : Convert Languages
-// Version : 1.0.2
+// Version : 1.0.3
 // Github  : https://github.com/crazychicken/converthtml
 // ##############################
 // ### variable default colors ###
@@ -49,7 +49,7 @@ $comment   : #7b7b7b;
   right: 10px;
   padding: 5px;
   position: absolute;
-  font-size: 12px;
+  font-size: 0.85em;
   color: lighten($bg_pre, 10%);
   background: $bg_pre;
 }
