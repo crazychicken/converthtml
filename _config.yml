@@ -21,7 +21,7 @@ social_logo_path: https://converthtml.amptype.com/theme/images/about-convert.png
 social_image_path: https://converthtml.amptype.com/theme/images/about-convert.png
 
 # Custom vars
-current_version:  1.0.0
+current_version:  1.0.2
 repo:             https://github.com/crazychicken/converthtml.git
 
 download:

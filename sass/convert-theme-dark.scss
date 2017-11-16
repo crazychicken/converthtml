@@ -1,8 +1,8 @@
 // ##############################
 // Author  : Crazychicken - Tuds
 // Name    : Convert Languages
-// Version : 0.0.1
-// Github  :
+// Version : 1.0.2
+// Github  : https://github.com/crazychicken/converthtml
 // ##############################
 // ### variable default colors ###
 $bg_pre    : #4b4b4b;
@@ -89,7 +89,8 @@ $comment   : #7b7b7b;
   .amp_cn,
   .amp_tag,
   .amp_q,
-  .amp_fn {
+  .amp_fn,
+  .amp_vl {
     color: $quote;
   }
 }
@@ -100,7 +101,8 @@ $comment   : #7b7b7b;
   .amp_cn,
   .amp_tag,
   .amp_q,
-  .amp_fn {
+  .amp_fn,
+  .amp_vl {
     color: $comment;
   }
 }
