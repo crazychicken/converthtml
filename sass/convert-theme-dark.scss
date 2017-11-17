@@ -1,7 +1,7 @@
 // ##############################
 // Author  : Crazychicken - Tuds
 // Name    : Convert Languages
-// Version : 1.0.5
+// Version : 1.0.6
 // Github  : https://github.com/crazychicken/converthtml
 // ##############################
 // ### variable default colors ###
@@ -70,7 +70,8 @@ $comment   : #7b7b7b;
 }
 .amp_vl { // value
   &,
-  .amp_tag {
+  .amp_tag,
+  .amp_df {
     color: $value;
   }
 }
@@ -82,6 +83,13 @@ $comment   : #7b7b7b;
 .amp_var { // variable
   color: $variable;
 }
+
+.amp_df {
+  &,
+  .amp_attr {
+    color: lighten($tag, 10%);
+  }
+}
 .amp_q { // comment + quote
   &,
   .amp_var,
@@ -90,7 +98,8 @@ $comment   : #7b7b7b;
   .amp_tag,
   .amp_q,
   .amp_fn,
-  .amp_vl {
+  .amp_vl,
+  .amp_df {
     color: $quote;
   }
 }
@@ -102,7 +111,8 @@ $comment   : #7b7b7b;
   .amp_tag,
   .amp_q,
   .amp_fn,
-  .amp_vl {
+  .amp_vl,
+  .amp_df {
     color: $comment;
   }
 }
