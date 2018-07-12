@@ -1,7 +1,7 @@
 // ##############################
 // Author  : Crazychicken - Tuds
 // Name    : Convert Languages
-// Version : 1.0.7
+// Version : 1.0.8
 // Github  : https://github.com/crazychicken/converthtml
 // ##############################
 html, body {
@@ -27,6 +27,7 @@ p {
   margin-top: 30px;
   overflow: hidden;
   box-sizing: border-box;
+  display: block;
 }
 #inputText,
 #outputText {
@@ -45,7 +46,7 @@ p {
   float: left;
   width: 100%;
   margin-top: 20px;
-  overflow-x: scroll;
+  overflow-x: auto;
   border-top: 2px dashed #ddd;
 }
 #subMit,

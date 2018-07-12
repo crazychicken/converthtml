@@ -1,7 +1,7 @@
 // ##############################
 // Author  : Crazychicken - Tuds
 // Name    : Convert Languages
-// Version : 1.0.7
+// Version : 1.0.8
 // Github  : https://github.com/crazychicken/converthtml
 // ##############################
 // ### variable default colors ###
@@ -56,7 +56,7 @@ $comment   : #7b7b7b;
 // ##### DEFAULT #####
 .amp_pre_wrap {
   margin: 0;
-  overflow-x: scroll;
+  overflow-x: auto;
   padding-right: 40px;
 }
 .amp_tag { // tab html

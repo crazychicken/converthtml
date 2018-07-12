@@ -1,14 +1,21 @@
 {
   "name": "converthtml",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Converthtml help you convert your original html into a colorful one, which is useful for html-style tutorial/demo pages. Converthtml is designed with many colorful themes for you to choose.",
-  "main": "gulpfile.js",
+  "main": "./public/theme/js/custom.js",
   "repository": {
     "type": "git",
     "url": "git+ssh:git@github.com:crazychicken/converthtml.git"
   },
   "keywords": [
-    "converthtml", "convert content", "convert sass", "tuds", "crazychicken", "convert css", "amptype", "t-scroll"
+    "converthtml",
+    "convert content",
+    "convert sass",
+    "tuds",
+    "crazychicken",
+    "convert css",
+    "amptype",
+    "t-scroll"
   ],
   "author": "Tuds - Crazychicken",
   "license": "MIT",
